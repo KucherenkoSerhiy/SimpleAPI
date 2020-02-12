@@ -15,7 +15,7 @@ namespace SimpleAPI.Test
         {
             var forecasts = this.controller.Get();
             var lastForecast = forecasts.Last();
-            Assert.Equal("It makes no difference who we are", lastForecast.Summary);
+            Assert.Equal("It makes no difference who we are!", lastForecast.Summary);
             Assert.Equal(-20, lastForecast.TemperatureC);
         }
 
